@@ -2,3 +2,4 @@
 *.csproj.user
 /ExcelService/bin/Debug/netcoreapp2.1
 /ExcelService/obj
+/ExcelService/.vs/ExcelService/v15/Server/sqlite3
