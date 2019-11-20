@@ -1,0 +1,4 @@
+﻿/.vs
+*.csproj.user
+/ExcelService/bin/Debug/netcoreapp2.1
+/ExcelService/obj
