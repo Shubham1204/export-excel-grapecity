@@ -3,7 +3,8 @@
 Test en net.core 2.1
 pruebas del servicio en angular:
 
-  Export() {
+Export() {
+
     const requestUrl = 'https://localhost:44341/api/Excel/Export';
     const fileName = 'report1-grapecity.xlsx';
     fetch(requestUrl, {
@@ -20,9 +21,10 @@ pruebas del servicio en angular:
           'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
         );
       });
-  }
+}
   
-  public DownloadFile(data: Blob, filename: string, mime: string): void {
+public DownloadFile(data: Blob, filename: string, mime: string): void {
+
     const blob = new Blob([data], { type: mime || 'application/octet-stream' });
     if (typeof window.navigator.msSaveBlob !== 'undefined') {
       window.navigator.msSaveBlob(blob, filename);
@@ -36,4 +38,5 @@ pruebas del servicio en angular:
       tempLink.click();
       document.body.removeChild(tempLink);
     }
-  }
+		
+}
